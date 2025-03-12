@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="std" class="com.test.Student">
+		<property name="id" value="1"></property>
+		<property name="name" value="Rana"></property>
+		<property name="skills">
+			<list>
+				<value>core Java</value>
+				<value>Spring</value>
+				<value>Adv Java</value>
+				<value>FSD</value>
+			</list>
+		</property>
+	</bean>     
+            
+           <bean id="order1" class="com.test.Order">
+                    <constructor-arg name="id" value="201"> </constructor-arg>
+                    <constructor-arg name="name" value="Rohith"> </constructor-arg>
+                    <constructor-arg name="price" value="111"> </constructor-arg>
+                   
+                </bean>
+                
+</beans>
